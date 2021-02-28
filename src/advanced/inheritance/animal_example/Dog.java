@@ -1,0 +1,19 @@
+package advanced.inheritance.animal_example;
+
+import advanced.inheritance.animal_example.Animal;
+
+public class Dog extends Animal {
+
+    private String breed;
+
+    public Dog(String bred, String voice, boolean mammal) {
+        super(voice, mammal);
+        this.breed = breed;
+
+    }
+
+    @Override
+    public String yieldVoice() {
+        return "Dog voice: "  + voice;
+    }
+}
